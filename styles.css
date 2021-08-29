@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    padding: 2em;
+    min-height: 100vh;    
+    background-image: linear-gradient(#9599E2 0%, #8BC6EC 100%);
+        /* https://cssgradient.io/gradient-backgrounds/ */
+    color: white;
+}
+.landingContainer img {
+    width: 50%;
+    height: auto;
+
+    border-radius: 50%;
+    margin-bottom: 5em;
+}
+.landingContainer h1 {
+    margin-bottom: 1em;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.landingContainer h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
