@@ -15,21 +15,43 @@
     background-image: linear-gradient(#9599E2 0%, #8BC6EC 100%);
         /* https://cssgradient.io/gradient-backgrounds/ */
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .landingContainer img {
     width: 50%;
+    max-width: 20em;
     height: auto;
 
     border-radius: 50%;
     margin-bottom: 5em;
 }
 .landingContainer h1 {
-    margin-bottom: 1em;
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
+    margin: .5em 0;
+    font-size: 3rem;    
 }
 .landingContainer h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-size: 2rem;
+    font-weight: 400;    
+}
+@media only screen and (min-width: 600px) {
+    .landingContainer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .landingTextContainer {
+        order: 1;
+        margin-right: 2em;
+    }    
+    .landingContainer img {
+        order: 2;
+        margin-bottom: initial;
+    }
+}
+@media only screen and (min-width: 1140px) {
+    .landingContainer h1 {
+        font-size: 4rem;
+    }    
+    .landingContainer h2 {
+        font-size: 3rem;
+    }
 }
