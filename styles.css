@@ -169,6 +169,13 @@ h4 {
     line-height: 2;
     max-width: 65ch;
 }
+.myEducationContainer p a {
+    color: #449fdb;
+    text-decoration: none;
+}
+.myEducationContainer p a:hover {
+    color: #1d435d;
+}
 .myEducationContainer > div div {
     margin-bottom: 5em;
 }
