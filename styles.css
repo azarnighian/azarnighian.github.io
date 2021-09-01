@@ -29,18 +29,18 @@ p {
 }
 .landingContainer img {
     width: 50%;
-    max-width: 20em;
+    max-width: 11em;
     height: auto;
 
     border-radius: 50%;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 .landingContainer h1 {
     margin: .5em 0;
-    font-size: 3rem;    
+    font-size: 2.5rem;    
 }
 .landingContainer h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 200;    
 }
 @media only screen and (min-width: 600px) {
@@ -57,9 +57,14 @@ p {
         margin-bottom: initial;
     }
 }
+@media only screen and (min-width: 768px) {
+    .landingContainer img {
+        max-width: 18em;  
+    }
+}
 @media only screen and (min-width: 1140px) {    
     .landingContainer h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }    
     .landingContainer h2 {
         font-size: 3rem;
@@ -200,7 +205,7 @@ h4 {
 .myContactInfoContainer > div {
     margin-top: 5em;
     padding: 3em;
-    background-color: lightgray;
+    background-color: rgb(200, 200, 200);
     color: white;
     border-radius: 10px;
     width: 100%;
