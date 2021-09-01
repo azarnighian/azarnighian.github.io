@@ -19,13 +19,14 @@ p {
     align-items: center;
     
     text-align: center;
-    padding: 2em;    
+    padding: 3em 2em 0;    
 }
                             /* Landing Section */
 .landingContainer {       
     background-image: linear-gradient(#9599E2 0%, #8BC6EC 100%);
         /* https://cssgradient.io/gradient-backgrounds/ */  
-    min-height: var(--vh100);           
+    min-height: var(--vh100);
+    padding: 2em;           
 }
 .landingContainer img {
     width: 50%;
@@ -80,8 +81,7 @@ h4 {
 }
                         
 .myWorkContainer {     
-    background-image: linear-gradient(#8BC6EC 0%, #fbbb67 100%);        
-    padding: 3em 2em; 
+    background-image: linear-gradient(#8BC6EC 0%, #fbbb67 100%);             
 }                                
 .myWorkImgsContainer {
     display: flex;
@@ -128,15 +128,15 @@ h4 {
   
 @media screen and (min-width: 500px) {
     .myWorkContainer {
-      padding: 5em;
+      padding: 3em 5em;
     }
 }
 @media screen and (min-width: 600px) {
     .myWorkContainer {
-      padding: 7em;
+      padding: 3em 7em;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {    
     .myWorkContainer {
       padding: 3em 0;
     }
@@ -201,6 +201,7 @@ h4 {
 .myContactInfoContainer {
     background-image: linear-gradient(#b4e295 0%, #9599E2 100%);
     min-height: 100vh;
+    padding-bottom: 2em;
 }
 .myContactInfoContainer > div {
     margin-top: 5em;
