@@ -49,7 +49,7 @@ p {
         flex-direction: row;
         justify-content: space-around;        
     }
-    .landingTextContainer {
+    .landingContainer div {
         order: 1;
         margin-right: 2em;
     }    
@@ -83,24 +83,24 @@ h4 {
 .myWorkContainer {     
     background-image: linear-gradient(#8BC6EC 0%, #fbbb67 100%);             
 }                                
-.myWorkImgsContainer {
+.myWorkContainer > div {
     display: flex;
     flex-direction: column;
     margin-top: 5em;
 }
-.myWorkImgsContainer > div {
+.myWorkContainer > div div {
     width: 100%;
     margin-bottom: 5em;
 }
-.myWorkImgsContainer img {    
+.myWorkContainer > div img {    
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
-.myWorkImgsContainer h4 {
+.myWorkContainer > div h4 {
     margin-top: .5em;    
 }
-.myWorkImgsContainer p {    
+.myWorkContainer > div p {    
     margin-top: 1.5em;    
 }
 .techUsed {
@@ -140,20 +140,20 @@ h4 {
     .myWorkContainer {
       padding: 3em 0;
     }
-    .myWorkImgsContainer {
+    .myWorkContainer > div {
       flex-direction: row;    
       margin-bottom: 5em;
       padding-left: 2em;
-        /* to balance out margin-right of each img div */        
+        /* to balance out margin-right of '.myWorkContainer > div div' */        
       justify-content: center;      
     }
-    .myWorkImgsContainer div {
+    .myWorkContainer > div div {
         width: 30%;
         margin-bottom: 0;
         margin-right: 2em;
-            /* match with padding left of myWorkImgsContainer */
+            /* match with padding left of '.myWorkContainer > div' */
     } 
-    .myWorkImgsContainer p {
+    .myWorkContainer > div p {
         font-size: 1.2rem;
     }    
 }
@@ -184,6 +184,9 @@ h4 {
 .myEducationContainer > div div {
     margin-bottom: 5em;
 }
+.myEducationContainer i {
+    font-weight: 600;
+}
 @media screen and (min-width: 768px) {
     .myEducationContainer > div {
         display: flex;
@@ -206,7 +209,7 @@ h4 {
 .myContactInfoContainer > div {
     margin-top: 5em;
     padding: 3em;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(180, 180, 180);
     color: white;
     border-radius: 10px;
     width: 100%;
