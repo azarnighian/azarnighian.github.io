@@ -120,6 +120,8 @@ h4 {
     text-decoration: none;
     margin-right: .25em;
     margin-left: .25em;
+    /* https://stackoverflow.com/questions/45049873/how-to-remove-the-blue-highlight-of-button-on-mobile */
+    -webkit-tap-highlight-color: transparent;
   }
 .linkButton:hover {
     background-color: #449fdb;
