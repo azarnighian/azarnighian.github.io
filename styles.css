@@ -33,7 +33,7 @@ p {
     max-width: 11em;
     height: auto;
 
-    border-radius: 50%;
+    border-radius: 40%;
     margin-bottom: 3em;
 }
 .landingContainer h1 {
@@ -50,11 +50,9 @@ p {
         justify-content: space-around;        
     }
     .landingContainer div {
-        order: 1;
         margin-right: 2em;
     }    
     .landingContainer img {
-        order: 2;
         margin-bottom: initial;
     }
 }
