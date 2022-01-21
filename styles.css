@@ -203,8 +203,7 @@ h4 {
                     /* 'My Contact Information' Section */
 .myContactInfoContainer {
     background-image: linear-gradient(#b4e295 0%, #9599E2 100%);
-    min-height: 100vh;
-    padding-bottom: 2em;
+    padding-bottom: 5em;
 }
 .myContactInfoContainer > div {
     margin-top: 5em;
