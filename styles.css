@@ -142,7 +142,6 @@ h4 {
     }
     .myWorkContainer > div {
       flex-direction: row;    
-      margin-bottom: 5em;
       padding-left: 2em;
         /* to balance out margin-right of '.myWorkContainer > div div' */        
       justify-content: center;      
