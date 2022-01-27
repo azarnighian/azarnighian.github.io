@@ -3,16 +3,24 @@
     margin: 0;
     padding: 0;
 }
-
+.wrapper {
+    /* To prevent address bar from hiding on mobile browsers, which would have caused the background image on homepage to resize on scroll */
+      /* https://stackoverflow.com/a/61683565/11528872 */
+    position: absolute;
+    top: 0.1px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden;
+    overflow-y: auto;   
+}   
 body {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
-
 p {
     overflow-wrap: break-word;    
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -21,6 +29,7 @@ p {
     text-align: center;
     padding: 3em 2em 0;    
 }
+
                             /* Landing Section */
 .landingContainer {       
     background-image: linear-gradient(#9599E2 0%, #8BC6EC 100%);
