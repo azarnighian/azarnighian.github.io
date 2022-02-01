@@ -34,41 +34,41 @@ p {
 .landingContainer {       
     background-image: linear-gradient(#9599E2 0%, #8BC6EC 100%);
         /* https://cssgradient.io/gradient-backgrounds/ */  
-    min-height: var(--vh100);
+    min-height: calc(var(--vh, 1vh) * 100);
     padding: 2em;           
 }
 .landingContainer img {
-    width: 50%;
-    max-width: 11em;
+    width: calc(var(--vh, 1vh) * 26);
     height: auto;
 
     border-radius: 40%;
-    margin-bottom: 3em;
+    margin-bottom: calc(var(--vh, 1vh) * 11);
 }
 .landingContainer h1 {
-    margin: .5em 0;
-    font-size: 2.5rem;    
+    margin: calc(var(--vh, 1vh) * 2) 0;
+    font-size: calc(var(--vh, 1vh) * 6);
 }
 .landingContainer h2 {
-    font-size: 1.5rem;
+    font-size: calc(var(--vh, 1vh) * 4.5);
     font-weight: 200;    
 }
 @media only screen and (min-width: 600px) {
     .landingContainer {
         flex-direction: row;
         justify-content: space-around;        
-    }
-    .landingContainer div {
-        margin-right: 2em;
-    }    
+    }       
     .landingContainer img {
         margin-bottom: initial;
     }
 }
 @media only screen and (min-width: 768px) {
     .landingContainer img {
+        width: 30%;
         max-width: 18em;  
     }
+    .landingContainer h1 {
+        margin: .5em 0;
+    }    
 }
 @media only screen and (min-width: 1140px) {    
     .landingContainer h1 {
