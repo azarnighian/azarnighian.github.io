@@ -55,7 +55,8 @@ p {
 @media only screen and (min-width: 600px) {
     .landingContainer {
         flex-direction: row;
-        justify-content: space-around;        
+        justify-content: space-around;
+        gap: 4rem;        
     }       
     .landingContainer img {
         margin-bottom: initial;
@@ -145,15 +146,24 @@ h4 {
 }
 @media screen and (min-width: 768px) {    
     .myWorkContainer {
-        padding: 3rem 2rem;
+        padding: 3rem;
     }
     .myWorkContainer > div {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
     }                                    
     .myWorkContainer > div p {
         font-size: 1.2rem;
     }    
+}
+@media screen and (min-width: 1140px) {
+    .myWorkContainer {
+        padding: 2rem;
+    }
+    .myWorkContainer > div {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
 }
 
                         /* 'My Education' Section */
@@ -187,12 +197,10 @@ h4 {
 .myEducationContainer i {
     font-weight: 600;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
     .myEducationContainer > div {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;               
-
-        padding: 0 1rem;
     }    
 }
 
