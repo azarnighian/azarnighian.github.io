@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: clamp(1rem, 1vw, 2rem);
+        /* responsive typography */
+}
 .wrapper {
     /* To prevent address bar from hiding on mobile browsers, which would have caused the background image on homepage to resize on scroll */
       /* https://stackoverflow.com/a/61683565/11528872 */
