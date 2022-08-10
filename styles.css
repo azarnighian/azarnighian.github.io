@@ -90,6 +90,7 @@ h3 {
 }
 h4 {
     font-size: 1.7rem;
+    font-weight: 600;
 }
                         
 .myWorkContainer {     
@@ -154,19 +155,15 @@ h4 {
     }
     .myWorkContainer > div {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem;
+        gap: 5rem 3rem;
     }                                    
     .myWorkContainer > div p {
         font-size: 1.2rem;
     }    
 }
-@media screen and (min-width: 1140px) {
-    .myWorkContainer {
-        padding: 2rem;
-    }
+@media screen and (min-width: 1140px) {    
     .myWorkContainer > div {
         grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
     }
 }
 
@@ -224,6 +221,7 @@ h4 {
 }
 h5 {
     font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: .5rem;
 }
 .myContactInfoContainer p {
