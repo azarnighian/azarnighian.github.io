@@ -46,7 +46,7 @@ p {
     height: auto;
 
     border-radius: 50%;
-    margin-bottom: calc(var(--vh, 1vh) * 11);
+    margin-bottom: calc(var(--vh, 1vh) * 15);
 }
 .landingContainer h1 {
     margin: calc(var(--vh, 1vh) * 2) 0;
