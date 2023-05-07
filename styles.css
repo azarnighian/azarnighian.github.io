@@ -7,17 +7,6 @@ html {
     font-size: clamp(1rem, 1vw, 2rem);
         /* responsive typography */
 }
-.wrapper {
-    /* To prevent address bar from hiding on mobile browsers, which would have caused the background image on homepage to resize on scroll */
-      /* https://stackoverflow.com/a/61683565/11528872 */
-    position: absolute;
-    top: 0.1px;
-    left: 0;
-    right: 0;
-    bottom: 0.5px;
-    overflow-x: hidden;
-    overflow-y: auto;   
-}   
 body {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -165,45 +154,7 @@ h4 {
     .myWorkContainer > div {
         grid-template-columns: repeat(4, 1fr);
     }
-}
-
-                        /* 'My Education' Section */
-.myEducationContainer {     
-    background-image: linear-gradient(#fbbb67 0%, #b4e295 100%);        
-    padding-bottom: 5rem;
-}
-.myEducationContainer > div {
-    display: grid;
-    gap: 5rem;
-
-    margin-top: 5rem;
-}             
-.myEducationContainer p {
-    margin-top: 1.5rem;
-    background-color: white;
-    color: rgb(58, 58, 58);
-    border-radius: 10px;
-    padding: 1rem;
-    line-height: 2;
-    max-width: 65ch;
-}
-.myEducationContainer p a {
-    color: #449fdb;
-    text-decoration: none;
-}
-.myEducationContainer p a:hover {
-    color: #1d435d;
-}
-
-.myEducationContainer i {
-    font-weight: 600;
-}
-@media screen and (min-width: 1140px) {
-    .myEducationContainer > div {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;               
-    }    
-}
+}                        
 
                     /* 'My Contact Information' Section */
 .myContactInfoContainer {
